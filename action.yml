@@ -53,6 +53,8 @@ inputs:
 outputs:
   deploy-url:
     description: Deploy URL
+  deployment-url:
+    description: Deploy URL (it is always the specific deploy URL not the site's URL)
 runs:
   using: 'node24'
   main: 'dist/index.js'

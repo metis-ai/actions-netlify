@@ -123,6 +123,7 @@ export async function run(inputs: Inputs): Promise<void> {
       ? deploy.deploy.ssl_url
       : deploy.deploy.deploy_ssl_url
     core.setOutput('deploy-url', deployUrl)
+    core.setOutput('deployment-url', deploy.deploy.ssl_url)
 
     // Get GitHub token
     const githubToken = inputs.githubToken()
